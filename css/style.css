@@ -1,0 +1,245 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+.logo{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 40px;
+    height: 40px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+.logo{
+    padding: 5px;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+.list-design{
+display: flex;
+width: 70%;
+list-style: none;
+align-items: center;
+}
+.right-nav{
+    width: 30%;
+    align-items: center;
+    text-align: center;
+    padding: 0px 0px 12px 0px
+}
+
+.list-design li{
+    display: flex;
+    }
+
+.list-design li a{
+text-decoration: none;
+color: white;
+font-size: 17px;
+padding: 0px 20px 0px;
+}
+
+.list-design li a:hover{
+    color: grey;
+    }
+
+#search{
+    border-radius: 5px;
+    border: 2px solid black;
+    padding: 5px;
+}
+.background{
+    background: rgba(0, 0, 0, 0.7) url("../image/background.jpg");
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.mainDiv{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    height: auto;
+    padding: 35px;
+}
+
+.firsthalf{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+}
+
+.secondhalf{
+    width: 30%;
+}
+
+.secondhalf img{
+    display: flex;
+    margin: auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+    border: 2px solid grey;
+}
+
+.btn{
+    background: none;
+    color:white;
+    font-size: 18px;
+    border-radius: 5px;
+    padding: 3px;
+    border: 1px solid white;
+    margin-right: 2px;
+    margin-top: 20px;
+}
+
+.btn-btn-sm{
+    background: none;
+    color:white;
+    font-size: 17px;
+    border-radius: 5px;
+    padding: 1px;
+    border: 1px solid white;
+    margin-right: 2px;
+    margin-top: 20px;
+}
+
+.div2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.bigText{
+    font-size: 25px;
+}
+
+.secondhalf2{
+    display: flex;
+    flex-direction: column-reverse;
+    margin: auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.sec2{
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 20px 30px;
+}
+
+.sec-x{
+    display: flex;
+    padding: 20px 30px;
+}
+
+.form1{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* margin: auto; */
+    padding: 10px 0;
+    background-color: aliceblue;
+    height: auto;
+}
+.line{
+    position: absolute;
+    display: none;
+    width: 27px;
+    background-color: white;
+    border: 2px solid black;
+    padding: 1px 0px;
+}
+
+.form-input{
+    margin: 5px 0;
+    width: 100%;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.btn-dark{
+    font-size: 17px;
+    border-radius: 3px;
+    padding: 2px;
+    background: none;
+    margin-top: 8px;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    height: 26px;
+    color: white;
+    width: 100%;
+    align-items: center;
+}
+
+@media only screen and (max-width:912px){
+    .navbar{
+        flex-direction: column;
+    }
+    .list-design{
+        flex-direction: column; 
+    }
+    .right-nav{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .mainDiv{
+        flex-direction: column-reverse;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .secondhalf{
+        width: 100%;
+        justify-content: center;
+    }
+    .sec2{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .sec-x{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact{
+        height: 70vh;
+    }
+    .line{
+        display: inline;
+    }
+}
